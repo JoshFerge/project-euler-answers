@@ -1,26 +1,5 @@
-# PROBLEM 1
-# sums = 0 
-# for i in range(1,1000):
-# 	if i % 3 == 0 or i % 5 == 0:
-# 		print i
-# 		sums +=i
-# print sums
 
-# #PROBLEM 2
 
-# numl2 = 1
-# num = 2
-# accum = 2
-# while num < 4000000:
-# 	temp = num
-# 	num = num+numl2
-
-# 	if num > 4000000:
-# 		break
-# 	print num
-# 	if num % 2 == 0:
-# 		accum +=num
-# 	numl2 = temp
 
 # print accum
 
@@ -38,29 +17,6 @@
 # 	else:
 # 		t=t+1
 
-# #PROBLEM 4
-# def reverse(s):
-# 	new = ""
-# 	for i in s:
-# 		print i
-# 		new = i+new
-# 	return new
-# print reverse("bacon")
-
-# def isPalindrome(n):
-# 	sn = str(n)
-# 	if sn == reverse(sn):
-# 		return True
-# 	else:
-# 		return False
-
-# largestPalindrome = 0 
-
-# for i in range(100,1000):
-# 	for j in range(100,1000):
-# 		if isPalindrome(i*j) and i*j > largestPalindrome:
-# 			largestPalindrome = i*j
-# print largestPalindrome
 
 
 
@@ -75,14 +31,14 @@
 # 	for i in range(10,21):
 # 		if n%i != 0:
 # 			isgood = False
-			
+
 # 	if isgood == True:
 # 		smallest = n
 # 		print smallest
 # 		break
 # 	n = n +1
 # 	if n % 100000 == 0:
-# 		print n 
+# 		print n
 # print smallest
 
 #PROBLEM 6
@@ -151,7 +107,7 @@
 # 	if n > m:
 # 		return 0
 # 	if (m - n) % 2 ==0:
-# 		return 0 
+# 		return 0
 # 	if not isCoprime(m,n):
 # 		return 0
 
@@ -222,7 +178,7 @@
 # #LEFT RIGHT
 # for i in range(0,20):
 # 	for j in range(0,16):
-		
+
 
 
 
@@ -249,7 +205,7 @@
 
 
 # print gp
-		
+
 
 # primes500 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239]
 
@@ -265,10 +221,10 @@
 # 	divisors = 0
 # 	triangle+=helper
 # 	helper+=1
-	
+
 # 	for p in primes500:
 # 		if triangle % p !=0:
-# 			check = False	
+# 			check = False
 # 	if check == True:
 # 		for i in range(1,(triangle/2)+1):
 # 			if triangle % i == 0:
@@ -323,12 +279,12 @@
 
 # sub = 0
 # def recur(l,m):
-	
+
 # 	print l,m
 # 	global g
 # 	global sub
 # 	if l < FINAL:
-		
+
 # 		l = l+1
 # 		recur(l,m)
 # 		if m == FINAL and l == FINAL-1:
@@ -354,117 +310,66 @@
 
 # print s
 
-s = 9*9*10+  67*10  + 470*10   99*3*9 *      
-
-
-twenty   6
-thirty   6
-fourty   6
-fifty    5
-sixty    5
-seventy  7
-eighty   6
-nine ty  6
-
-
-print s
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# s = 9*9*10+  67*10  + 470*10   99*3*9 *
+#
+#
+# twenty   6
+# thirty   6
+# fourty   6
+# fifty    5
+# sixty    5
+# seventy  7
+# eighty   6
+# nine ty  6
+#
+#
+# print s
+#
+#
+paper = ['*','*','*','*','*','*','*','*','*','*']
+move_possible = True
+
+# def alice_move(paper):
+# 	for i in range(1,len(paper)):
+# 		if paper[i-1] == '*' and paper[i] == '*':
+# 			paper[i-1] = 'A'
+# 			paper[i] = 'A'
+# 			return paper
+# 	return 'NOT POSSIBLE ALICE LOSES'
+#
+# def bob_move(paper):
+# 	for i in range(1,len(paper)):
+# 		if paper[i-1] == '*' and paper[i] == '*':
+# 			paper[i-1] = 'B'
+# 			paper[i] = 'B'
+# 			return paper
+# 	return 'NOT POSSIBLE BOB LOSES'
+#
+#
+#
+#
+# while move_possible == True:
+# 	print paper
+# 	paper = alice_move(paper)
+# 	print paper
+# 	paper = bob_move(paper)
+# 	if paper == 'NOT POSSIBLE ALICE LOSES' or paper == 'NOT POSSIBLE BOB LOSES':
+# 		move_possible = False
+
+
+
+
+
+
+# total =0
+# for i in range(1,51):
+# 	if i != 1:
+# 		if i%2 == 0:
+# 			print i
+# 			total +=1
+# 		elif ((i-1)/2)%2 != 0:
+# 			print i
+# 			total +=1
+		#else:
+		#	print i
+#print total
